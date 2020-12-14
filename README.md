@@ -1,3 +1,3 @@
-# Covid-19-projects
+# Covid-19-data
 
-This is my first repository and data of Covid-19 serves perfectly for learning Python.
+Covid-19 data serves perfectly for learning Python.
