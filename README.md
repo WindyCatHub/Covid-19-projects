@@ -8,4 +8,12 @@ To visualize correctly current situation in Lithuania, I needed to clean data a 
   * Source has two columns of date: "Start of sickness" and "Positive test date". 
     * I used `<pd.to_datetime>` to convert string type to date type 
   * Gender column had empty values so I changed it to "unknown" and the same value for female was written in two ways.
-  *
+
+This data set has an information on the end of the case. The values is the column are:
+    * Gydomas - currently sick
+    * Pasveiko - recovered   
+    * Mirė - died         
+    * Kita - other         
+    * Nesirgo - never were sick
+    *         - unknown
+        
