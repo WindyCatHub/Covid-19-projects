@@ -6,4 +6,4 @@ For analysis, I use epidemiological data published in [here](https://data.gov.lt
 
 To visualize correctly current situation in Lithuania, I needed to clean data a bit.
   * Source has two columns of date: "Start of sickness" and "Positive test date". 
-        * I used `<pd.to_datetime>` to convert string type to date type 
+    * I used `<pd.to_datetime>` to convert string type to date type 
