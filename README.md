@@ -10,10 +10,12 @@ To visualize correctly current situation in Lithuania, I needed to clean data a 
   * Gender column had empty values so I changed it to "unknown" and the same value for female was written in two ways.
 
 This data set has an information on the end of the case. The values is the column are:
-    * Gydomas - currently sick
-    * Pasveiko - recovered   
-    * Mirė - died         
-    * Kita - other         
-    * Nesirgo - never were sick
-    *         - unknown
-        
+   * Gydomas - currently sick
+   * Pasveiko - recovered   
+   * Mirė - died         
+   * Kita - other         
+   * Nesirgo - never were sick
+   * ...     - unknown
+I removed values that was equal to "never were sick". I am doing assumption that this data was accidentally put into data set or so..    
+
+To visualize current situation in Lithuania I calculated running sum for each type of end cases as my data set has new cases per day. I did it using `<.cumsum(skipna = True)>` method.
