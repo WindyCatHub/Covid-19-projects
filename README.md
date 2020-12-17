@@ -29,7 +29,7 @@ Even though the old government said that everything is under control we can clea
 
 I am starting to believe that there are two groups of pleople in the world. One, who believe that Earth is round and others, who believe that Earth is flat. People who believe that Earth is flat deny science. When I hear people say "Christmas presents for the family and friends are more important than scientists' request to stay at home" - I automatically put them to the Flat Earth group...
 
-I marked the period of 2 days before the start of tightened quarantine in gray and a 5 days period in red. (it takes on average 5 days to feel simptoms after contact with person infected with Covid-19. 
+I marked the period of 2 days before the start of tightened quarantine in gray and a 5 days period in red. (it takes on average 5 days to feel symptoms after contact with person infected with Covid-19. 
 
 ![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download.png?raw=true)
 
