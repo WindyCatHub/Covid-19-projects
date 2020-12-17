@@ -22,5 +22,16 @@ To visualize current situation in Lithuania I calculated running sum for each ty
 
 # Data Visualisation
 
+Nevertheless, the old government said that everything is in control we clearly can see that from the start of September until new government started its work on 2020-12-11 (Friday), numbers of new cases were growing too fast to call it controlable.
+
 ![Covid -19 confirmed and completed (death or recovery) cases in Lithuania](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(1).png?raw=true)
 
+I start thinking that in the world we have two groups of pleople. One, who believe that Earth is round and others, who believe that Earth is flat. So people who believe that Earth is flat deny science. Hearing people saying that "Christmas presents for the family and friends are more important than scientists request to stay at home" makes me feel that they are believers of flat Earth as well.
+
+I marked with grey period of 2 days before the start of tightened quarantine and with red 5 days period. (it takes on average 5 days to feel simptoms after contact with person infected with Covid-19. 
+
+![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download.png?raw=true)
+
+Google provides mobility data.
+
+![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(2).png?raw=true)
