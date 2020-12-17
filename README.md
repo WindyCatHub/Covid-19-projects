@@ -22,5 +22,5 @@ To visualize current situation in Lithuania I calculated running sum for each ty
 
 # Data Visualisation
 
-![Covid -19 confirmed and completed (death or recovery) cases in Lithuania](C:\Users\Kęstas\Desktop\Data Science project\Covid ep\download (1).png)
-Format: ![Alt Text](C:\Users\Kęstas\Desktop\Data Science project\Covid ep\download (1).png)
+![Covid -19 confirmed and completed (death or recovery) cases in Lithuania](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(1).png?raw=true)
+
