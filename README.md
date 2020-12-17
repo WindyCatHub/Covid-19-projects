@@ -1,34 +1,35 @@
 # Data cleaning
 
-Covid-19 data serves perfectly for learning Python. There are many sources with Covid-19 data. As a start I decided to use Lithuanian open data portal. It provides data on testing results and positive cases by gender and age. File are .CSV and .JSON formats.
+Covid-19 data serves perfectly for learning Python. There are many sources with Covid-19 data. As a start I decided to use Lithuanian open data portal. It provides data on testing results and positive cases by gender and age. File is available in .CSV and .JSON formats.
 
-For analysis, I use epidemiological data published in [here](https://data.gov.lt/dataset/covid-19-epidemiologiniai-duomenys)
+For analysis, I used epidemiological data published [here](https://data.gov.lt/dataset/covid-19-epidemiologiniai-duomenys)
 
 To visualize correctly current situation in Lithuania, I needed to clean data a bit.
   * Source has two columns of date: "Start of sickness" and "Positive test date". 
     * I used `<pd.to_datetime>` to convert string type to date type 
-  * Gender column had empty values so I changed it to "unknown" and the same value for female was written in two ways.
+  * Gender column had empty values so I changed it to "unknown". Also "female" was written in two different ways, so I changed to have uniform defitinion here.
 
-This data set has an information on the end of the case. The values is the column are:
+This data set has information about outcome of each case. The values is this column are:
    * Gydomas - currently sick
    * Pasveiko - recovered   
    * Mirė - died         
    * Kita - other         
-   * Nesirgo - never were sick
+   * Nesirgo - was never sick
    * ...     - unknown
-I removed values that was equal to "never were sick". I am doing assumption that this data was accidentally put into data set or so..    
 
-To visualize current situation in Lithuania I calculated running sum for each type of end cases as my data set has new cases per day. I did it using `<.cumsum(skipna = True)>` method. For the visualisation below I used `<matplotlib.pyplot>`
+I removed values "was never sick" with an assumption that this data was accidentally put into data set.    
+
+To visualize current situation in Lithuania I calculated running sum for each type of end case as my data set has only new entries foreach day. I did it using `<.cumsum(skipna = True)>` method. For the visualisation below I used `<matplotlib.pyplot>`
 
 # Data Visualisation
 
-Nevertheless, the old government said that everything is in control we clearly can see that from the start of September until new government started its work on 2020-12-11 (Friday), numbers of new cases were growing too fast to call it controlable.
+Even though the old government said that everything is under control we can clearly see that from the start of September until new government started its work on 2020-12-11 (Friday), numbers of new cases were growing too fast to call it controlable. We will see if new actions taken by the new government would have better success.
 
 ![Covid -19 confirmed and completed (death or recovery) cases in Lithuania](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(1).png?raw=true)
 
-I start thinking that in the world we have two groups of pleople. One, who believe that Earth is round and others, who believe that Earth is flat. So people who believe that Earth is flat deny science. Hearing people saying that "Christmas presents for the family and friends are more important than scientists request to stay at home" makes me feel that they are believers of flat Earth as well.
+I am starting to believe that there are two groups of pleople in the world. One, who believe that Earth is round and others, who believe that Earth is flat. People who believe that Earth is flat deny science. When I hear people say "Christmas presents for the family and friends are more important than scientists' request to stay at home" - I automatically put them to the Flat Earth group...
 
-I marked with grey period of 2 days before the start of tightened quarantine and with red 5 days period. (it takes on average 5 days to feel simptoms after contact with person infected with Covid-19. 
+I marked the period of 2 days before the start of tightened quarantine in gray and a 5 days period in red. (it takes on average 5 days to feel simptoms after contact with person infected with Covid-19. 
 
 ![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download.png?raw=true)
 
