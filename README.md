@@ -33,6 +33,20 @@ I marked the period of 2 days before the start of tightened quarantine in gray a
 
 ![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download.png?raw=true)
 
-Google provides mobility data.
+Google provides mobility data for all over the world. To load full .csv file requires a lot of memory resources. So I loaded file by chunks and filtered data I needed:
+
+```
+mobility_csv_file = 'https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv'
+c_size = 5000
+
+mobility_dataLT = None
+for chunk in pd.read_csv(mobility_csv_file,chunksize=c_size, parse_dates=['date']):
+    chunk_result =  chunk[chunk['country_region']=="Lithuania"]
+    
+    if mobility_dataLT is None:
+        mobility_dataLT = chunk_result
+    else:
+        mobility_dataLT = mobility_dataLT.append(chunk_result)
+```
 
 ![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(2).png?raw=true)
