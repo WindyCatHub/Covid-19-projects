@@ -48,6 +48,7 @@ for chunk in pd.read_csv(mobility_csv_file,chunksize=c_size, parse_dates=['date'
     else:
         mobility_dataLT = mobility_dataLT.append(chunk_result)
 ```
+These Community Mobility Reports aim to provide data of mobility changes in response to policies aimed at combating COVID-19. I am really interested to see how will it look on the period that I marked red. Hopefully data will be sensitive enough to catch the situation for the period of 2 days before the start of tightened quarantine.
 
 ![](https://github.com/WindyCatHub/Journey-to-Data-Science/blob/main/image/download%20(2).png?raw=true)
 
