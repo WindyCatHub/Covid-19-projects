@@ -1,4 +1,4 @@
-# Data cleaning and Visualisation
+# Data cleaning
 
 Covid-19 data serves perfectly for learning Python. There are many sources with Covid-19 data. As a start I decided to use Lithuanian open data portal. It provides data on testing results and positive cases by gender and age. File are .CSV and .JSON formats.
 
@@ -18,4 +18,9 @@ This data set has an information on the end of the case. The values is the colum
    * ...     - unknown
 I removed values that was equal to "never were sick". I am doing assumption that this data was accidentally put into data set or so..    
 
-To visualize current situation in Lithuania I calculated running sum for each type of end cases as my data set has new cases per day. I did it using `<.cumsum(skipna = True)>` method.
+To visualize current situation in Lithuania I calculated running sum for each type of end cases as my data set has new cases per day. I did it using `<.cumsum(skipna = True)>` method. For the visualisation below I used `<matplotlib.pyplot>`
+
+# Data Visualisation
+
+![Covid -19 confirmed and completed (death or recovery) cases in Lithuania](C:\Users\Kęstas\Desktop\Data Science project\Covid ep\download (1).png)
+Format: ![Alt Text](C:\Users\Kęstas\Desktop\Data Science project\Covid ep\download (1).png)
